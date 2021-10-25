@@ -1,11 +1,12 @@
 function h1click() {
 	console.log(`O elemento h1 foi clicado`);
 }
+
 let h1 = document.getElementsByTagName("h1")[0];
+console.log(h1)
 
 function changeH1(i) {
 	h1.innerText = i.value;
-	console.log(h1.innerText = i.value);
 }
 
 function hideH4() {

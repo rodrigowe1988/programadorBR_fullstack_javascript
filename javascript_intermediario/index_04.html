@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adicionando eventos no JS</title>
+	<script>
+		//usando uma função com duas formas de usar os eventos. A forma "antiga" e usando o addEventListener
+		function loaded() {
+			let h1 = document.getElementById("titulo");
+			let h2 = document.getElementById("titulo2");
+			h1.onclick = mudarText;
+			h2.addEventListener("mouseover", mudarText);
+		}
+
+		function mudarText() {
+			this.innerHTML = "meu texto modificado";
+		}
+	</script>
+</head>
+<body onload="loaded()">
+	<h1 id="titulo">Meu Título</h1>
+
+	<h1 id="titulo2">Meu segundo Título</h1>
+</body>
+</html>

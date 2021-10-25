@@ -15,16 +15,16 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="console.log('Página completamente carregada.')">
 	<h1 onclick="h1click()" id="testeOnClick">Clique em mim</h1>
 
 	<h2>Digite e veja a diferença dos métodos: </h2>
 	<!--usando o js para alterar o conteúdo de h1-->
 	<h3>Onchange() event: </h3>
-	<input type="text" onchange="changeH1(this)">
+	<input type="text" onchange="changeH1(this)" class="texto">
 	<hr>
 	<h3>Oninput() event: </h3>
-	<input type="text" oninput="changeH1(this)">
+	<input type="text" oninput="changeH1(this)" class="texto">
 	<script src="js/dom_events.js"></script>
 	<hr>
 	<h4>Isso aqui some</h4>
