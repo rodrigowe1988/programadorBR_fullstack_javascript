@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON</title>
+</head>
+<body>
+	<h1>Abra o console</h1>
+	<script>
+		let a = {
+			nome: "Igor",
+			nota: 8.5
+		}
+
+		//transformando em string o JSON
+		let b = JSON.stringify(a);
+
+		let a2 = '{"nome": "fabio", "nota": 7.2}';
+
+		//transformando em JSON a string. OBS: observe a forma como está escrita a string a2
+		let b2 = JSON.parse(a2);
+
+		console.log(a);
+		console.log(b);
+		console.log(a2);
+		console.log(b2);
+
+		console.log(b2.nome);
+		console.log(a.nota);
+
+	</script>
+</body>
+</html>
