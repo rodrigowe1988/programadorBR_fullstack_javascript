@@ -5,7 +5,8 @@
 Curso que tem por linguagem o Javascript tanto no Frontend quanto no Backend
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+* <b>Servir como base de estudo para futuros programadores</b>
+
 
 ## :wrench: Tecnologias utilizadas
 * HTML e CSS
@@ -25,7 +26,7 @@ Para rodar o repositório é necessário simplesmente cloná-lo.
   <tr>
     <td align="center">
       <a href="http://github.com/rodrigowe1988">
-        <img src="https://avatars.githubusercontent.com/u/60714212?s=40&v=44" width="100px;" alt="Foto de rodrigo weber no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/60714212?s=400&u=d21266ef77b83c62496e528f3da241bd9c665aeb&v=4" width="100px;" alt="Foto de rodrigo weber no GitHub"/><br>
         <sub>
           <b>rodrigowe1988</b>
         </sub>
