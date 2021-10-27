@@ -36,3 +36,4 @@ Para rodar o repositório é necessário simplesmente cloná-lo.
 </table>
 
 ## :dart: Status do projeto
+* Em andamento...
