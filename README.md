@@ -25,7 +25,7 @@ Para rodar o repositório é necessário simplesmente cloná-lo.
   <tr>
     <td align="center">
       <a href="http://github.com/rodrigowe1988">
-        <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de rodrigo weber no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/60714212?s=40&v=44" width="100px;" alt="Foto de rodrigo weber no GitHub"/><br>
         <sub>
           <b>rodrigowe1988</b>
         </sub>
