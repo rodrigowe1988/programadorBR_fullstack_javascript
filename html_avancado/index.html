@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Set Atribute</title>
+	<style>
+		#curtir {
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<img src="./images/thumbsUp.png"/ id="curtir">
+	<hr>
+	<ul num="10" id="lista">
+
+	</ul>
+	<script>
+		//trabalhando com a imagem de like e dislike e alternando entre elas
+		let image = document.getElementById("curtir");
+
+		image.addEventListener("click", function() {
+			let lastImage = image.getAttribute("src")
+			image.setAttribute("src", "./images/thumbsDown.png");
+
+			if(lastImage == "./images/thumbsDown.png") {
+				image.setAttribute("src", "./images/thumbsUP.png");
+			}
+		})
+		//adicionando elementos numa lista através de JS
+		let lista = document.getElementById('lista');
+		let num = parseInt(lista.getAttribute('num'));
+		let conteudo = "";
+
+		console.log(num);
+
+		for (let i = 0; i < num; i++) {
+			conteudo += `<li> Item ${i + 1} </li>`
+			console.log(conteudo);
+		}
+		lista.innerHTML = conteudo;
+	</script>
+</body>
+</html>
