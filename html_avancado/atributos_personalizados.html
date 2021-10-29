@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Atributos Personalizados</title>
+</head>
+<body>
+	<h2>Atributos personalizados</h2>
+	<p>O JS nos permite criar atributos personalizados que podemos acessar como se fossem objetos, tornando muito simples a manipulação de elementos.
+	</p>
+
+	<!--as boas práticas pedem que o atributo seja criado com o data- antes podendo ser acessado utilizando o dataset abaixo no JS-->
+	<ul id="lista" data-num="5">
+
+	</ul>
+	<script>
+		//perceba como é fácil trabalhar com atributos personalizados, você pode utilizar até mesmo valores que o próprio usuário passou via prompt, por exemplo
+		let lista = document.getElementById('lista');
+		console.log(lista.dataset.num);
+
+		let number = parseInt(lista.dataset.num = 4);
+		console.log(lista.dataset.num);
+		console.log(`Esse aqui está como número: ${number}.`);
+
+		let conteudo = "";
+
+		for (let i = 0; i < number; i++) {
+			conteudo += `<li> Item ${i + 1} </li>`;
+		}
+		lista.innerHTML = conteudo;
+	</script>
+</body>
+</html>
