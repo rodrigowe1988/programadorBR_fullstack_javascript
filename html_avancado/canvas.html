@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabalhando com Canvas</title>
+	<style>
+		#tela {
+			background-color: bisque;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="tela" width="500px" height="500px"></canvas>
+
+	<script>
+		let tela = document.getElementById('tela');
+
+		let conteudo = tela.getContext("2d");
+		conteudo.moveTo(250, 250);
+		conteudo.lineTo(0, 0);
+		conteudo.lineTo(500, 0);
+		conteudo.lineTo(500, 500);
+		conteudo.lineTo(0, 500);
+		conteudo.lineTo(0, 0);
+		conteudo.moveTo(250, 250);
+		conteudo.lineTo(500, 0);
+		conteudo.strokeStyle = "#FF0000";
+		conteudo.lineWidth = 5;
+		conteudo.stroke();
+	</script>
+</body>
+</html>
