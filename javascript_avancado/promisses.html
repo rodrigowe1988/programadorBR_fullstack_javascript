@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Promises</title>
+</head>
+<body>
+	<h1>Abra o console</h1>
+	<script>
+		let usuarios = ["Rodrigo", "Claudia", "Igor", "Ana"];
+
+		function inserirUsuario(nome) {
+
+			let promise = new Promise (function (resolve, reject){
+				setTimeout(() => {
+					usuarios.push(nome);
+					let error = false;
+
+					if (!error) {
+						resolve();
+					} else {
+						reject({msg: "Erro qualquer que queira usar aqui"});
+					}
+				}, 1000);
+			})
+			return promise;
+		}
+		function listarUsuarios() {
+			console.log(usuarios);
+		}
+
+		inserirUsuario("Rogério").then(listarUsuarios);
+		inserirUsuario(1234).then(listarUsuarios);
+	</script>
+</body>
+</html>

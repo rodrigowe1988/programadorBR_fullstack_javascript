@@ -18,12 +18,31 @@
 			return num1 * num2;
 		}
 		const division = (num1, num2) => num1 / num2;
-		const subtraction = (num1, num2) => num1 - num2;
+		//não é a melhor forma de se escrever essa função com rest operator, mas funciona
+		const subtraction = (...numbers) => {
+			return numbers[0] - numbers[1];
+		}
+		const pow = (...numbers) => numbers[0] * numbers[0];
+		function pow2(num1, num2) {
+			if (num1 > 0) {
+				let x = num1;
+				let total = 0;
+				for (let i = 1; i < num2; i++) {
+					total = x * num1;
+					x = total;
+				}
+				return total;
+			}
+			else
+				return NaN;
+		}
 
 		console.log(sum(1, 2));
 		console.log(mult(2, 4));
 		console.log(division(10, 5));
 		console.log(subtraction(10, 2));
+		console.log(pow(5))
+		console.log(pow2(7, 2));
 	</script>
 </body>
 </html>
